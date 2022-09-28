@@ -22,6 +22,7 @@
     import FooterSection from "./FooterSection.vue";
 
     window.onscroll = () => {
+        // This function underlines the active nav-link when it's corresponding section is in view.
         let current = "";
         let sections = document.getElementsByClassName("section")
         let navItem = document.getElementsByClassName("nav-item")
@@ -36,7 +37,7 @@
         for (let i=0; i < sections.length; i++) {
             let li = navItem[i]
             li.classList.remove("active");
-            if (li.id === current) {
+            if (li.classList.contains(current)) {
                 li.classList.add("active");
             }
         }

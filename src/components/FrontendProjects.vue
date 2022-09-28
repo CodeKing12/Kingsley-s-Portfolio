@@ -5,37 +5,37 @@
             <hr class="w-52 border-neon-green animate-pulse" />
         </div>
         <div class="grid grid-cols-2 gap-24 justify-between mb-16">
-            <div class="cursor-pointer group project" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150">
+            <div class="cursor-pointer group project" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
                 <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                     <img src="@/assets/images/covertskins-2.png" />
                 </div>
                 <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">CovertSkins</h4>
             </div>
-            <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150">
+            <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
                 <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                     <img src="@/assets/images/smart_neighbourhoods_1.png" />
                 </div>
                 <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">Smart Neighbourhoods</h4>
             </div>
-            <div class="cursor-pointer group project" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150">
+            <div class="cursor-pointer group project" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
                 <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                     <img src="@/assets/images/wiscar.png" />
                 </div>
                 <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">Wiscar</h4>
             </div>
-            <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150">
+            <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
                 <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                     <img src="@/assets/images/smezone.png" />
                 </div>
                 <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">SMEZONE Fundraiser</h4>
             </div>
-            <div class="cursor-pointer group project" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <div class="cursor-pointer group project" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
                 <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                     <img src="@/assets/images/black-hosting.png" />
                 </div>
                 <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">Black Hosting</h4>
             </div>
-            <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
                 <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                     <img src="@/assets/images/hostechno.png" />
                 </div>
@@ -48,16 +48,16 @@
     </section>
 </template>
 
-<script>
-    let projects = document.getElementsByClassName("project");
-    for (let i=0; i < projects.length; i++) {
-        console.log("ROW")
-        projects[i].addEventListener("mouseenter", () => {
-            projects[i].classList.add("hovered-project");
-        })
-        projects[i].addEventListener("animationend", () => {
-            projects[i].classList.remove("hovered-project")
-        })
+<script setup>
+
+    function startAnim(event) {
+        // Add the hovered project class to start the animation once the mouse enters the div
+        event.target.classList.add("hovered-project")
+    }
+
+    function endAnim(event) {
+        // Once the image animation ends, remove the hovered-project class from it's parent div
+        event.target.parentElement.classList.remove("hovered-project")
     }
 </script>
 
