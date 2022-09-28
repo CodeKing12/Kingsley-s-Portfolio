@@ -1,5 +1,5 @@
 <template>
-    <section class="px-16 mb-32">
+    <section class="px-16 mb-32 section" id="languages">
         <h4 class="font-mono font-bold text-xl uppercase w-fit mx-auto cursor-pointer after:block after:w-2/6 after:delay-100 after:mx-auto after:mt-1 after:bg-neon-green after:h-0.5 hover:after:w-full hover:after:opacity-100 after:duration-500 after:ease">My Languages and Frameworks</h4>
         <div class="flex gap-x-16 gap-y-14 mt-14 flex-wrap">
             <div class="uppercase font-bold font-grotesk text-lg px-8 py-[10px] flex items-center gap-4 border-2 border-grey rounded-[4px] cursor-pointer duration-300 ease-linear hover:border-neon-green">

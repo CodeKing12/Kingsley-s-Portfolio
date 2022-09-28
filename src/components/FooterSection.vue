@@ -1,5 +1,5 @@
 <template>
-    <footer class="px-16 mb-24">
+    <footer id="contact" class="px-16 mb-24 section">
         <h3 class="font-mono font-bold text-xl uppercase">Let's Make <span class="text-neon-green">Contact</span></h3>
         <div class="mt-10 flex justify-between">
             <form class="flex flex-col gap-10 font-epilogue w-4/5 max-w-lg">

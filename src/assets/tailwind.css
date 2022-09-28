@@ -3,3 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+    /* .active {
+        @apply after:w-full after:opacity-100
+    } */
+}

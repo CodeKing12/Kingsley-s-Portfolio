@@ -1,6 +1,6 @@
 <template>
     <section class="bg-[#0C0C0C] text-white text-base font-epilogue font-normal transition-all">
-        <header>
+        <header id="intro" class="section">
             <NavBar />
             <IntroDuction />
         </header>
@@ -20,4 +20,28 @@
     import MyLanguages from "./MyLanguages.vue";
     import AboutMe from "./AboutMe.vue";
     import FooterSection from "./FooterSection.vue";
+
+    window.onscroll = () => {
+        let current = "";
+        let sections = document.getElementsByClassName("section")
+        let navItem = document.getElementsByClassName("nav-item")
+
+        // console.log(sections)
+        for (let i=0; i < sections.length; i++) {
+            let section = sections[i]
+            const sectionTop = section.offsetTop;
+            if (scrollY >= sectionTop-210 ) {
+                console.log(sectionTop, scrollY)
+                current = section.getAttribute("id"); }
+        }
+
+        for (let i=0; i < sections.length; i++) {
+            let li = navItem[i]
+            li.classList.remove("active");
+            if (li.classList.contains(current)) {
+                li.classList.add("active");
+            }
+        }
+        console.log(current)
+    };
 </script>
