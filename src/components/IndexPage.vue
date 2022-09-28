@@ -34,6 +34,7 @@
                 current = section.getAttribute("id"); }
         }
 
+        // This loops through all the sections each time
         for (let i=0; i < sections.length; i++) {
             let li = navItem[i]
             li.classList.remove("active");
