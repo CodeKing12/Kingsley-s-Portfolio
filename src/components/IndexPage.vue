@@ -26,22 +26,19 @@
         let sections = document.getElementsByClassName("section")
         let navItem = document.getElementsByClassName("nav-item")
 
-        // console.log(sections)
         for (let i=0; i < sections.length; i++) {
             let section = sections[i]
             const sectionTop = section.offsetTop;
             if (scrollY >= sectionTop-210 ) {
-                console.log(sectionTop, scrollY)
                 current = section.getAttribute("id"); }
         }
 
         for (let i=0; i < sections.length; i++) {
             let li = navItem[i]
             li.classList.remove("active");
-            if (li.classList.contains(current)) {
+            if (li.id === current) {
                 li.classList.add("active");
             }
         }
-        console.log(current)
     };
 </script>

@@ -9,25 +9,25 @@
             </form>
             <div class="flex flex-col gap-12 mx-auto">
                 <a class="flex gap-4 font-grotesk font-medium text-2xl uppercase cursor-pointer group">
-                    <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-300">
+                    <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-200">
                         Gmail
                     </span>
                     <img class="w-5" src="@/assets/images/link-arrow.svg" />
                 </a>
                 <a class="flex gap-4 font-grotesk font-medium text-2xl uppercase cursor-pointer group">
-                    <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-300">
+                    <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-200">
                         Github
                     </span>
                     <img class="w-5" src="@/assets/images/link-arrow.svg" />
                 </a>
                 <a class="flex gap-4 font-grotesk font-medium text-2xl uppercase cursor-pointer group">
-                    <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-300">
+                    <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-200">
                         LinkedIn
                     </span>
                     <img class="w-5" src="@/assets/images/link-arrow.svg" />
                 </a>
                 <a class="flex gap-4 font-grotesk font-medium text-2xl uppercase cursor-pointer group">
-                    <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-300">
+                    <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-200">
                         Whatsapp
                     </span>
                     <img class="w-5" src="@/assets/images/link-arrow.svg" />

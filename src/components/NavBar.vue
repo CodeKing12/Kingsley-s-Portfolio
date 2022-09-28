@@ -2,18 +2,30 @@
     <nav class="flex justify-between w-full px-16 py-5 top-0 fixed bg-[#0c0c0c] z-50">
         <img class="w-10" src="@/assets/images/icon-logo.svg" />
         <div class="flex gap-12 items-center">
-            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-gray-100 after:bg-opacity-70 after:h-[0.3px] after:block nav-item intro" href="#">Introduction</a>
-            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-gray-100 after:bg-opacity-70 after:h-[0.3px] after:block nav-item projects" href="#">Projects</a>
-            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-gray-100 after:bg-opacity-70 after:h-[0.3px] after:block nav-item languages" href="#">Languages & Frameworks</a>
-            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-gray-100 after:bg-opacity-70 after:h-[0.3px] after:block nav-item about" href="#">About</a>
-            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-gray-100 after:bg-opacity-70 after:h-[0.3px] after:block nav-item contact" href="#">Contact</a>
+            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-neon-green after:bg-opacity-70 after:h-[0.4px] after:block nav-item cursor-pointer active" id="intro">Introduction</a>
+            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-neon-green after:bg-opacity-70 after:h-[0.4px] after:block nav-item cursor-pointer" id="projects">Projects</a>
+            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-neon-green after:bg-opacity-70 after:h-[0.4px] after:block nav-item cursor-pointer" id="languages">Languages & Frameworks</a>
+            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-neon-green after:bg-opacity-70 after:h-[0.4px] after:block nav-item cursor-pointer" id="about">About</a>
+            <a class="text-[15px] font-epilogue w-fit font-light after:w-0 after:transition-all after:duration-300 after:ease-linear after:opacity-0 hover:after:w-full hover:after:opacity-100 after:bg-neon-green after:bg-opacity-70 after:h-[0.4px] after:block nav-item cursor-pointer" id="contact">Contact</a>
         </div>
     </nav>
 </template>
 
+<script setup>
+    let navItems = document.getElementsByClassName("nav-item");
+    for (let i=0; i < navItems.length; i++) {
+        console.log(i);
+        let item = navItems[i];
+        item.addEventListener("click", () => {
+            let section = document.getElementById(item.id);
+            console.log(section.offsetTop);
+        })
+    }
+</script>
+
 <style scoped>
     .nav-item::after {
-        transform: rotateY(30deg);
+        transform: rotateY(24deg);
     }
 
     .active::after {
