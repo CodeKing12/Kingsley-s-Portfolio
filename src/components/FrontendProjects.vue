@@ -6,7 +6,7 @@
         </div>
         <div class="grid grid-cols-2 gap-24 justify-between mb-16">
             <div v-for="project in frontprojects" :key="project.id" class="cursor-pointer group project" :data-aos="project.id % 2 === 1 ? 'flip-right' : 'flip-left'" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
-                <a :href="project.url">
+                <a :href="project.url" target="_blank">
                     <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                         <img :src="require('@/assets/images/' + project.img)" />
                     </div>

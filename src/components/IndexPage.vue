@@ -35,7 +35,7 @@
         }
 
         // This loops through all the sections each time
-        for (let i=0; i < sections.length; i++) {
+        for (let i=0; i < navItem.length; i++) {
             let li = navItem[i]
             li.classList.remove("active");
             if (li.classList.contains(current)) {
