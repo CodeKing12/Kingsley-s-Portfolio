@@ -109,7 +109,7 @@
         {
             id: 9,
             img: "",
-            name: "Aftatech",
+            name: "Quizix",
             url: ""
         },
     ])
