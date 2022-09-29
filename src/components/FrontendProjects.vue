@@ -49,6 +49,72 @@
 </template>
 
 <script setup>
+    import { ref } from "vue";
+
+    let frontprojects = ref([
+        {
+            id: 0,
+            img: "covertskins-2.png",
+            name: "CovertSkins",
+            url: ""
+        },
+        {
+            id: 1,
+            img: "smart_neighbourhoods_1.png",
+            name: "Smart Neighbourhoods",
+            url: ""
+        },
+        {
+            id: 2,
+            img: "wiscar.png",
+            name: "Wiscar",
+            url: ""
+        },
+        {
+            id: 3,
+            img: "smezone.png",
+            name: "SMEZONE Fundraiser",
+            url: ""
+        },
+        {
+            id: 4,
+            img: "black-hosting.png",
+            name: "Black Hosting",
+            url: ""
+        },
+        {
+            id: 5,
+            img: "hostechno.png",
+            name: "Hostechno",
+            url: ""
+        },
+        {
+            id: 6,
+            img: "eagleskills.png",
+            name: "Eagleskills",
+            url: ""
+        },
+        {
+            id: 7,
+            img: "lumia-mayes.png",
+            name: "Lumia Mayes",
+            url: ""
+        },
+        {
+            id: 8,
+            img: "eps.png",
+            name: "Eden Plus Spectrum",
+            url: ""
+        },
+        {
+            id: 9,
+            img: "",
+            name: "Aftatech",
+            url: ""
+        },
+    ])
+
+    console.log(frontprojects)
 
     function startAnim(event) {
         // Add the hovered project class to start the animation once the mouse enters the div
