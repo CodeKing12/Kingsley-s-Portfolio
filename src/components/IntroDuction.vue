@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-40 px-16 mb-32" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <section class="mt-44 px-16 mb-32" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
         <h3 class="font-capriola text-xl mb-4">Hi, I'm Eyetu Kingsley</h3>
         <h1 class="text-5xl leading-[1.6] font-capriola">An Enthusiastic <span class="text-neon-green">Frontend Architect</span> <br /> and <span class="text-neon-green">Backend Engineer</span></h1>
         <p class="mt-7 text-gray-200">I design and develop intuitive user interfaces and implement customized business/backend logic</p>
