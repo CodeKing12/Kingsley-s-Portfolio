@@ -5,13 +5,15 @@
             <hr class="w-52 border-neon-green animate-pulse" />
         </div>
         <div class="grid grid-cols-2 gap-24 justify-between mb-16">
-            <div class="cursor-pointer group project" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
-                <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
-                    <img src="@/assets/images/covertskins-2.png" />
-                </div>
-                <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">CovertSkins</h4>
+            <div v-for="project in frontprojects" :key="project.id" class="cursor-pointer group project" :data-aos="project.id % 2 === 1 ? 'flip-right' : 'flip-left'" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
+                <a :href="project.url">
+                    <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
+                        <img :src="require('@/assets/images/' + project.img)" />
+                    </div>
+                    <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">{{ project.name }}</h4>
+                </a>
             </div>
-            <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
+            <!-- <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
                 <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                     <img src="@/assets/images/smart_neighbourhoods_1.png" />
                 </div>
@@ -40,7 +42,7 @@
                     <img src="@/assets/images/hostechno.png" />
                 </div>
                 <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">Hostechno</h4>
-            </div>
+            </div> -->
         </div>
         <button class="block mx-auto font-grotesk text-lg font-bold border-2 border-neon-green text-center px-10 py-2 text-black relative after:h-full after:w-full after:bg-neon-green after:block after:absolute after:top-0 after:left-0 after:z-10 hover:after:w-0 hover:text-white after:duration-300 after:ease-in-out" data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="700">
             <span class="relative z-20 delay-100 duration-[400ms]">View More</span>
@@ -56,43 +58,43 @@
             id: 0,
             img: "covertskins-2.png",
             name: "CovertSkins",
-            url: ""
+            url: "https://covertskins.eyetukingsley.gq/"
         },
         {
             id: 1,
             img: "smart_neighbourhoods_1.png",
             name: "Smart Neighbourhoods",
-            url: ""
+            url: "https://smartneighbourhood.com.ng/"
         },
         {
             id: 2,
             img: "wiscar.png",
             name: "Wiscar",
-            url: ""
+            url: "https://wiscar.hypersence.ml/sources/"
         },
         {
             id: 3,
             img: "smezone.png",
             name: "SMEZONE Fundraiser",
-            url: ""
+            url: "https://codeking12.github.io/Smezone-Fundraiser/sources"
         },
         {
             id: 4,
             img: "black-hosting.png",
             name: "Black Hosting",
-            url: ""
+            url: "https://black-hosting.eyetukingsley.gq/"
         },
         {
             id: 5,
             img: "hostechno.png",
             name: "Hostechno",
-            url: ""
+            url: "https://hostechno.eyetukingsley.gq/"
         },
         {
             id: 6,
             img: "eagleskills.png",
             name: "Eagleskills",
-            url: ""
+            url: "https://eagleskills.com.ng/"
         },
         {
             id: 7,
@@ -104,11 +106,11 @@
             id: 8,
             img: "eps.png",
             name: "Eden Plus Spectrum",
-            url: ""
+            url: "https://eps.hypersence.ml/"
         },
         {
             id: 9,
-            img: "",
+            img: "quizix.png",
             name: "Quizix",
             url: ""
         },
