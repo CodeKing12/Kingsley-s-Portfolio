@@ -100,7 +100,7 @@
             id: 7,
             img: "lumia-mayes.png",
             name: "Lumia Mayes",
-            url: ""
+            url: "https://lumia-mayes.eyetukingsley.gq/"
         },
         {
             id: 8,
