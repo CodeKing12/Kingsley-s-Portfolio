@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex justify-between w-full px-16 py-5 top-0 fixed bg-[#030a09] z-50" data-aos="flip-up" data-aos-easing="ease-in-quart" data-aos-duration="700">
+    <nav class="flex justify-between w-full px-4 sm:px-10 lg:px-16 py-5 top-0 fixed bg-[#030a09] z-50" data-aos="flip-up" data-aos-easing="ease-in-quart" data-aos-duration="700">
         <!-- 0c0c0c, 030c01 -->
         <img class="w-10" src="@/assets/images/icon-logo.svg" />
         <div class="gap-12 items-center hidden lg:flex">

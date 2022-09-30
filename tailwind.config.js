@@ -17,6 +17,18 @@ module.exports = {
         capriola: ['Capriola', 'sans-serif'],
         metrophobic: ['Metrophobic', 'sans-serif'],
       },
+      screens: {
+        'xs': '350px',
+        'sm': '576px',
+        'sm2': '640px',
+        'md': '768px',
+        'lg': '992px',
+        'lg2': '1024px',
+        'xl': '1200px',
+        'xl2': '1280px',
+        'xxl': '1400px',
+        'xxl2': '1536px',
+      }
       // keyframes: {
       //   imageOverlay: {
       //     '0%, 100%': { height: '0%' },
