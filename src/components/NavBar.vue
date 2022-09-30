@@ -37,7 +37,13 @@
     function scrollToSection(sectionId) {
         // This scrolls the page to the clicked section. Using traditional ID's won't work perfectly because the navbar is covering part of the section.
         let section = document.getElementById(sectionId)
-        sectionId == 'intro' ? scrollTo(0, 0) : scrollTo(0, section.offsetTop-120);
+        sectionId == 'intro' ? scrollTo(0, 0) : scrollTo(0, section.offsetTop+80)
+    }
+
+    function sideScroll(sectionId) {
+        // This scrolls the page to the clicked section. Using traditional ID's won't work perfectly because the navbar is covering part of the section.
+        showSidebar.value = !showSidebar.value;
+        scrollToSection(sectionId);
     }
 
     watch(showSidebar, () => {
