@@ -1,16 +1,16 @@
 <template>
-    <section class="px-16 mb-32">
-        <div class="flex gap-7 items-center mb-9" data-aos="zoom-out" data-aos-easing="ease-out-quart" data-aos-duration="1000" data-aos-offset="100">
+    <section class="px-5 xs:px-7 sm:px-10 lg:px-16 mb-32">
+        <div class="flex mx-auto lg:mx-0 w-fit flex-col gap-2 sm2:flex-row sm2:gap-7 items-center sm2:mb-9 mb-10" data-aos="zoom-out" data-aos-easing="ease-out-quart" data-aos-duration="1000" data-aos-offset="100">
             <h4 class="font-grotesk font-bold text-xl">My Frontend Projects</h4>
             <hr class="w-52 border-neon-green animate-pulse" />
         </div>
-        <div class="grid grid-cols-2 gap-24 justify-between mb-16">
+        <div class="grid grid-cols-1 max-w-xl mx-auto lg:max-w-none lg:mx-0 lg:grid-cols-2 gap-16 sm:gap-20 md:gap-28 lg:gap-24 justify-between mb-16">
             <div v-for="project in frontprojects" :key="project.id" class="cursor-pointer group project" :data-aos="project.id % 2 === 1 ? 'flip-right' : 'flip-left'" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
                 <a :href="project.url" target="_blank">
                     <div class="after:bg-black after:bg-opacity-40 after:w-full after:h-0 after:bottom-0 after:left-0 after:block after:absolute relative project-img">
                         <img :src="require('@/assets/images/' + project.img)" />
                     </div>
-                    <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">{{ project.name }}</h4>
+                    <h4 class="w-fit uppercase font-bold font-mono text-lg sm:text-xl md:text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">{{ project.name }}</h4>
                 </a>
             </div>
             <!-- <div class="cursor-pointer group project" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="150" @mouseenter="startAnim" @animationend="endAnim">
@@ -44,9 +44,9 @@
                 <h4 class="w-fit uppercase font-bold font-mono text-2xl mt-3 after:w-0 after:transition-all after:duration-[400ms] after:ease-in-out after:mt-0.5 group-hover:after:w-full after:bg-neon-green after:h-1 after:block" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="800" data-aos-delay="100" data-aos-offset="50">Hostechno</h4>
             </div> -->
         </div>
-        <button class="block mx-auto font-grotesk text-lg font-bold border-2 border-neon-green text-center px-10 py-2 text-black relative after:h-full after:w-full after:bg-neon-green after:block after:absolute after:top-0 after:left-0 after:z-10 hover:after:w-0 hover:text-white after:duration-300 after:ease-in-out" data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="700">
+        <!-- <button class="block mx-auto font-grotesk text-lg font-bold border-2 border-neon-green text-center px-10 py-2 text-black relative after:h-full after:w-full after:bg-neon-green after:block after:absolute after:top-0 after:left-0 after:z-10 hover:after:w-0 hover:text-white after:duration-300 after:ease-in-out" data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="700">
             <span class="relative z-20 delay-100 duration-[400ms]">View More</span>
-        </button>
+        </button> -->
     </section>
 </template>
 
