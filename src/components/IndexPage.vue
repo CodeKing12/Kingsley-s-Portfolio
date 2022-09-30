@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-[#0C0C0C] text-white text-base font-epilogue font-normal transition-all">
+    <section class="bg-[#0C0C0C] text-white text-base font-epilogue font-normal transition-all relative">
         <header id="intro" class="section">
             <NavBar />
             <IntroDuction />
