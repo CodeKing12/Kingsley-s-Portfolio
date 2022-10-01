@@ -21,9 +21,11 @@
                 <div class="flex gap-7 flex-col max-w-md lg:pb-0 pb-9" data-aos="fade-down-left" data-aos-easing="ease-out-cubic" data-aos-duration="900" data-aos-delay="100" data-aos-offset="150">
                     <h3 class="uppercase font-mono text-lg font-bold">Research Notes</h3>
                     <p class="font-capriola text-[15px] leading-loose">Research Notes is a Django Web-App that converts a github repository of folders and markdown files into a functioning website. Amongst other features, it also updates itself whenever a commit is made to the chosen github repo.</p>
-                    <button class="font-mono font-bold border-2 border-neon-green text-center px-9 py-2 relative after:h-full after:w-0 after:bg-neon-green after:block after:absolute after:top-0 after:left-0 after:z-10 hover:after:w-full hover:text-black after:duration-300 after:ease-in-out w-fit">
-                        <span class="relative z-20 delay-100 duration-[400ms] font-grotesk">View Project</span>
-                    </button>
+                    <a href="https://notes-doc.herokuapp.com/" target="_blank">
+                        <button class="font-mono font-bold border-2 border-neon-green text-center px-9 py-2 relative after:h-full after:w-0 after:bg-neon-green after:block after:absolute after:top-0 after:left-0 after:z-10 hover:after:w-full hover:text-black after:duration-300 after:ease-in-out w-fit">
+                            <span class="relative z-20 delay-100 duration-[400ms] font-grotesk">View Project</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
