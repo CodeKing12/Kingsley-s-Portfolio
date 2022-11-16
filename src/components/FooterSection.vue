@@ -8,13 +8,13 @@
                 <textarea class="w-full max-w-lg outline-none bg-transparent border-b border-b-gray-300 placeholder:text-grey placeholder:text-opacity-60 py-2 focus:border-neon-green ease-in-out duration-500 h-32" placeholder="Message" data-aos="zoom-out-left" data-aos-easing="ease-in-quart" data-aos-duration="900" data-aos-delay="350" data-aos-offset="50"></textarea>
             </form>
             <div class="flex lg:flex-col gap-8 sm2:gap-10 lg:gap-12 lg2:mx-auto flex-wrap lg:flex-nowrap">
-                <a class="flex gap-4 font-grotesk font-medium text-xl lg:text-2xl uppercase cursor-pointer group" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="700" data-aos-delay="50" data-aos-offset="0">
+                <a class="flex gap-4 font-grotesk font-medium text-xl lg:text-2xl uppercase cursor-pointer group" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="700" data-aos-delay="50" data-aos-offset="0" href="mailto:eyetukingsley330@gmail.com">
                     <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-200">
                         Gmail
                     </span>
                     <img class="w-5" src="@/assets/images/link-arrow.svg" />
                 </a>
-                <a class="flex gap-4 font-grotesk font-medium text-xl lg:text-2xl uppercase cursor-pointer group" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="700" data-aos-delay="100" data-aos-offset="0">
+                <a class="flex gap-4 font-grotesk font-medium text-xl lg:text-2xl uppercase cursor-pointer group" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="700" data-aos-delay="100" data-aos-offset="0" href="https://github.com/CodeKing12" target="_blank">
                     <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-200">
                         Github
                     </span>
