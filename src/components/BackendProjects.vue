@@ -31,3 +31,9 @@
         </div>
     </section>
 </template>
+
+<!--The four projects I want on my social profiles, for now-->
+<!--https://www.eyetukingsley.gq/-->
+<!--https://smartneighbourhood.com.ng/-->
+<!--http://shoppa-ng.herokuapp.com/-->
+<!--https://lumia-mayes.eyetukingsley.gq/-->
