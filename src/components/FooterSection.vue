@@ -20,13 +20,13 @@
                     </span>
                     <img class="w-5" src="@/assets/images/link-arrow.svg" />
                 </a>
-                <a class="flex gap-4 font-grotesk font-medium text-xl lg:text-2xl uppercase cursor-pointer group" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="700" data-aos-delay="150" data-aos-offset="0">
+                <a class="flex gap-4 font-grotesk font-medium text-xl lg:text-2xl uppercase cursor-pointer group" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="700" data-aos-delay="150" data-aos-offset="0" href="https://www.linkedin.com/in/eyetu-kingsley" target="_blank">
                     <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-200">
                         LinkedIn
                     </span>
                     <img class="w-5" src="@/assets/images/link-arrow.svg" />
                 </a>
-                <a class="flex gap-4 font-grotesk font-medium text-xl lg:text-2xl uppercase cursor-pointer group" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="700" data-aos-delay="200" data-aos-offset="0">
+                <a class="flex gap-4 font-grotesk font-medium text-xl lg:text-2xl uppercase cursor-pointer group" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="700" data-aos-delay="200" data-aos-offset="0" href="https://api.whatsapp.com/send?phone=2347035991721&text=Hi,%20I%20need%20you%20to%20develop%20something%20for%20me." target="_blank">
                     <span class="after:block after:w-0 after:bg-neon-green after:h-0.5 group-hover:after:w-full after:ease-linear after:duration-200">
                         Whatsapp
                     </span>
