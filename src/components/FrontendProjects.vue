@@ -55,12 +55,6 @@
 
     let frontprojects = ref([
         {
-            id: 0,
-            img: "covertskins-2.png",
-            name: "CovertSkins",
-            url: "https://covertskins.eyetukingsley.gq/"
-        },
-        {
             id: 1,
             img: "smart_neighbourhoods_1.png",
             name: "Smart Neighbourhoods",
@@ -90,6 +84,15 @@
             name: "Hostechno",
             url: "https://hostechno.eyetukingsley.gq/"
         },
+    ])
+
+    /* {
+            id: 0,
+            img: "covertskins-2.png",
+            name: "CovertSkins",
+            url: "https://covertskins.eyetukingsley.gq/"
+        },
+
         {
             id: 6,
             img: "eagleskills.png",
@@ -113,8 +116,7 @@
             img: "quizix.png",
             name: "Quizix",
             url: ""
-        },
-    ])
+        }, */
 
     console.log(frontprojects)
 
