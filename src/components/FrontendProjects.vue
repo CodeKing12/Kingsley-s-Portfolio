@@ -55,36 +55,40 @@
 
     let frontprojects = ref([
         {
-            id: 1,
+            img: "10000carrots.png",
+            name: "10000 Carrots Rabbit Rescue",
+            url: "https://10000carrots.netlify.app/"
+        },
+        {
             img: "smart_neighbourhoods_1.png",
             name: "Smart Neighbourhoods",
             url: "https://smartneighbourhood.com.ng/"
         },
         {
-            id: 2,
             img: "wiscar.png",
             name: "Wiscar",
             url: "https://wiscar.hypersence.ml/sources/"
         },
         {
-            id: 3,
             img: "smezone.png",
             name: "SMEZONE Fundraiser",
             url: "https://codeking12.github.io/Smezone-Fundraiser/sources"
         },
         {
-            id: 4,
             img: "black-hosting.png",
             name: "Black Hosting",
             url: "https://black-hosting.eyetukingsley.gq/"
         },
         {
-            id: 5,
             img: "hostechno.png",
             name: "Hostechno",
             url: "https://hostechno.eyetukingsley.gq/"
         },
     ])
+
+    for (let i=1; i < frontprojects.value.length; i++) {
+      frontprojects.value[i-1]['id'] = i
+    }
 
     /* {
             id: 0,
@@ -118,7 +122,7 @@
             url: ""
         }, */
 
-    console.log(frontprojects)
+    // console.log(frontprojects)
 
     function startAnim(event) {
         // Add the hovered project class to start the animation once the mouse enters the div

@@ -1,11 +1,11 @@
 <template>
     <section class="section" id="projects">
         <FrontendProjects />
-        <BackendProjects />
+<!--        <BackendProjects />-->
     </section>
 </template>
 
 <script setup>
     import FrontendProjects from "./FrontendProjects"
-    import BackendProjects from "./BackendProjects"
+    // import BackendProjects from "./BackendProjects"
 </script>
